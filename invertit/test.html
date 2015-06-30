@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tests</title>
+        <link rel="stylesheet" href="./node_modules/mocha/mocha.css"></script>
+    </head>
+    <body>
+        <div id="mocha"></div>
+        <script src="./node_modules/mocha/mocha.js"></script>
+        <script src="./node_modules/chai/chai.js"></script>
+        <script src="./node_modules/chai-as-promised/lib/chai-as-promised.js"></script>
+        <script src="./node_modules/sinon/pkg/sinon.js"></script>
+        <script src="./js/pixel.js"></script>
+        <script src="./js/bitmap.js"></script>
+        <script>mocha.setup('bdd');</script>
+        <script src="./test/pixel_test.js"></script>
+        <script src="./test/bitmap_test.js"></script>
+        <script>mocha.run();</script>
+    </body>
+</html>

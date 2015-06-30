@@ -1,0 +1,23 @@
+{
+  "name": "invertit",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.html",
+  "repository": "https://github.com/ingfy/JS-testing/",
+  "scripts": {
+    "test": "explorer test.html",
+    "start": "./node_modules/.bin/ws"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "chai-as-promised": "^5.1.0",
+    "local-web-server": "^0.5.19",
+    "mocha": "^2.2.5",
+    "sinon": "^1.15.4"
+  },
+  "dependencies": {
+    "angular": "^1.4.1"
+  }
+}

@@ -1,0 +1,21 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   'C:\\ProgramData\\chocolatey\\lib\\npm\\tools\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'test',
+1 verbose cli   '.\\test\\counter_test.js' ]
+2 info using npm@1.4.9
+3 info using node@v0.12.4
+4 error Error: ENOENT, open 'C:\Users\yngsva\Documents\Code\JS-testing\likeit\node_modules\test\counter_test.js\package.json'
+4 error     at Error (native)
+5 error If you need help, you may report this *entire* log,
+5 error including the npm and node versions, at:
+5 error     <http://github.com/npm/npm/issues>
+6 error System Windows_NT 6.3.9600
+7 error command "node" "C:\\ProgramData\\chocolatey\\lib\\npm\\tools\\node_modules\\npm\\bin\\npm-cli.js" "test" ".\\test\\counter_test.js"
+8 error cwd C:\Users\yngsva\Documents\Code\JS-testing\likeit
+9 error node -v v0.12.4
+10 error npm -v 1.4.9
+11 error path C:\Users\yngsva\Documents\Code\JS-testing\likeit\node_modules\test\counter_test.js\package.json
+12 error code ENOENT
+13 error errno -4058
+14 verbose exit [ -4058, true ]

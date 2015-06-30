@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Doggies and kitties</title>
+
+        <style>
+            .counter {
+                display: inline-block;
+                padding: 0 0.2em;
+                border: 1px solid #eee;
+                background-color: #efefef;
+            }
+
+            #app {
+                text-align: center;
+            }
+
+            button {
+                font-size: 2em;
+                padding: 0.5em;
+            }
+
+            .wait {
+                display: inline;
+                margin: 0 2em;
+            }
+        </style>
+    </head>
+    <body>
+        <button class="prev" data-bind="click: prev">Previous</button>
+        <button class="next" data-bind="click: next">Next</button>
+        <h2 class="wait" data-bind="text: wait"></h2>
+
+        <form id="app" data-bind="with: currentImage">
+            <h1>This one has <span class="counter likes-count" data-bind="text: likes"></span> likes.</h1>
+
+            <img data-bind="attr: {src: '/assets/images/' + src}" alt="Some image!" width="400px" height="400px" />
+
+            <div>
+                <button data-bind="click: like" id="like">Like it!</button>
+                <button data-bind="click: dislike" id="dislike">Hate it!</button>
+            </div>
+        </form>
+
+        <script src="dist/bundle.js"></script>
+    </body>
+</html>
